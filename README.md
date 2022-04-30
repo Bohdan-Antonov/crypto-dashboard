@@ -1,5 +1,4 @@
 # Crypto Dashboard
 
-***Ongoing projct***
+***Ongoing project***
 
-Crypto dashboard for trading bot
