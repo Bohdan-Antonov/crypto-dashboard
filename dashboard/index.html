@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTC</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@500&family=Rubik:wght@300&display=swap" rel="stylesheet">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js" integrity="sha384-7/4mCPzNngsbDuJa6jilz7GgN9gBRDCcCq94wXAcJerUsOopCxf8NS/MS8530Xmu" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--<nav class="navbar navbar-dark bg-dark">Crypto Bot</nav>-->
+    <div id="chart-data">
+        <div id="ticker">BTC/USDT</div>
+        <div id="price"></div>
+    </div>
+    <div id="container">
+        <div id="chart-wrapper">
+            <div id="chart"></div>
+        </div>
+        <div id="data-wrapper">
+            <div id="data">
+                <div id="order-book">
+                    <p>Order Book</p>
+                    <div id="book-container">
+                        <div id="ask">
+                            <div id="ask-trades">Price(USDT)</div>
+                            <div id="ask-volume">Amount(BTC)</div>
+                            <div id="ask-sum">Total(USDT)</div>
+                        </div>
+                        <div id="book-price"></div>
+                        <div id="bid">
+                            <div id="bid-trades"></div>
+                            <div id="bid-volume"></div>
+                            <div id="bid-sum"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tape">
+                    <p>Trades</p>
+                    <div id="tape-container">
+                        <div id="tape-time">Time</div>
+                        <div id="tape-trades">Price(USDT)</div>
+                        <div id="tape-volume">Amount(BTC)</div>
+                    </div>
+                </div>
+            </div>
+            <div id="stats-labels">
+                <div onclick='activeButton("orders")' id="orders">Orders</div>
+                <div onclick='activeButton("performance")' id="performance">Performance</div>
+                <div onclick='activeButton("console")' id="console">Console</div>
+            </div>
+            <div id="stats">No data to show</div>
+        </div>
+        
+    </div>
+    <script src="chart.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+.navbar {
+    font-size: 32px;
+    color: azure ;
+    margin-bottom: 2px;
+    padding: 0px 15px 0px 15px;
+    font-family: 'Fredoka One', cursive;
+    display: flex;
+}
+
+#chart-data {
+    display: flex;
+    padding: 10px 0 10px 15px; 
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    border-bottom: solid rgb(242, 242, 242) 2px;
+}
+
+#price{
+    margin-left: 15px;
+}
+
+#container {
+    height: 100%;
+    display: flex;
+}
+
+#chart-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 50%;
+    flex: 1 1 0px;
+}
+
+#chart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#data-wrapper {
+    border-left: solid rgb(242, 242, 242) 2px;
+    flex: 1 1 0px;
+}
+
+#data {
+    flex: 1 1 0px;
+    display: flex;
+    border-bottom: solid rgb(242, 242, 242) 2px;
+}
+
+#order-book, #tape {
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    background-color: white; 
+    font-size: 14px;
+    flex: 1 1 0px;
+    padding: 0 10px 0 10px;
+    margin: 0 2px 0 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+#order-book {
+    border-right: solid rgb(242, 242, 242) 2px;
+}
+
+#book-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#ask, #bid, #tape-container {
+    display: flex;
+    color: rgb(184, 184, 184);
+    flex: 1 1 0px;
+}
+
+#order-book p, #tape p{
+    font-size: 16px;
+    padding: 15px 0 0 0;
+}
+
+#tape-time, #tape-trades, #tape-volume {
+   flex: 1 1 0px;
+}
+
+#ask-volume, #bid-volume, #tape-trades {
+    text-align: center;
+}
+
+#ask-sum, #bid-sum, #tape-volume {
+    text-align: end;
+}
+
+.price, .volume, .time, #ask-trades, #ask-volume, #ask-sum, #bid-trades, #bid-volume, #bid-sum {
+    flex: 1 1 0px;
+}
+
+.ask-price, .ask-quantity, .ask-total, .bid-price, .bid-quantity, .bid-total, .time, .volume {
+    color: black;
+}
+
+.ask-price {
+    color: rgb(209, 25, 25)
+}
+
+.bid-price {
+    color: rgb(0, 185, 55)
+}
+
+#book-price {
+    font-size: 20px;
+    padding: 5.7px 0 5.7px 0;
+    border-bottom: solid rgb(242, 242, 242) 2px;
+    border-top: solid rgb(242, 242, 242) 2px;
+}
+
+#stats-labels {
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    color: rgb(184, 184, 184);
+}
+
+#stats-labels div {
+    margin: 10px;
+}
+
+#stats-labels div:hover {
+    color: black;
+    cursor: pointer;
+    border-bottom: solid black 2px;
+    transition: color .5s;
+}
+
+#orders { 
+    color: black;
+    border-bottom: solid black 2px;
+}
+
+#stats {
+    text-align: center;
+    color: rgb(184, 184, 184);
+}
+
+@media (max-width: 1470px) {
+    #chart-wrapper {
+        position: absolute;
+        left: -99999px;
+     }
+}
